@@ -8,7 +8,7 @@ l=["rock","scissor","paper"]
 while True:
     uc=int(input('''--You are going into the game--
     Press 1 for Start the game 
-    Press 2 for Exit  wsws
+    Press 2 for Exit  
                   
     '''));
 
