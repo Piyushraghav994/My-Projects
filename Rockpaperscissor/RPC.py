@@ -6,7 +6,7 @@ l=["rock","scissor","paper"]
 # Rock vs Scissor ----> Rock wins
 
 while True:
-    uc=int(input('''--You are going into the game--
+    uc=int(input('''--You are going into the game---
     Press 1 for Start the game 
     Press 2 for Exit  
                   
