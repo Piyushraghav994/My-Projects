@@ -19,7 +19,14 @@ class banksystem {
 };
 //functions of deposit method
 void banksystem::deposit(int amt){
-    amount =amount+amt;
+   if(amt<0)
+   {
+    cout<<"Invalid amount";
+   }
+   else
+    amount =amount+amt;{
+
+   }
 }
 
 //funtions of withdrawal 
