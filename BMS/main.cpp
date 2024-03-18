@@ -51,32 +51,36 @@ void banksystem::balance()
 
 int main() {
      
-     int choice;
-     int myamt;
+     int pin;
 
-    banksystem A;
+    cout<<"Enter the pin :-";
+    cin>>pin;
 
+    if(pin == 1234){
+        int choice;
+        int myamt;
+        banksystem A;
 
-do{
-    cout<<"\n-------------Banking system-------------";
-    cout<<"\n1.Deposit "; 
-    cout<<"\n2.Withdrawl";
-    cout<<"\n3.check balance";
-    cout<<"\n4.Exit";
-    cout<<"-----------------------------------";
+    do{
+        cout<<"\n-------------Banking system-------------";
+        cout<<"\n1.Deposit "; 
+        cout<<"\n2.Withdrawl";
+        cout<<"\n3.check balance";
+        cout<<"\n4.Exit";
+        cout<<"-----------------------------------";
 
-//which operation you want to perform 
-    cout<<"\nEnter the choice :-";
-    cin>>choice;
+    //which operation you want to perform 
+        cout<<"\nEnter the choice :-";
+        cin>>choice;
 
     
 
-    switch(choice)
-    {
-        case 1:
+        switch(choice)
         {
-            cout<<"\nEnter the amount :-";
-            cin>>myamt;
+            case 1:
+            {
+                cout<<"\nEnter the amount :-";
+                cin>>myamt;
 
             A.deposit(myamt);
             break;
@@ -96,11 +100,15 @@ do{
         {
             A.balance();
         }
-    }
-
-
-}while(choice!=4);   
+        } 
+      }while(choice!=4);   
     
     return 0;
+
+    }
+else
+{
+cout<<"You enter the wrong Pin";
+}
 
 }
